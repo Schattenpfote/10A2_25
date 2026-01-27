@@ -17,7 +17,7 @@ public class Enemy extends GameAsset {
     }
 
     public Enemy(int damage, int velocity, int healthpoints, int bounty, int x, int y, ImageIcon img, String name) {
-        super(x, y, img, name);
+        super(x,y,img, name);
         this.damage = damage;
         this.velocity = velocity;
         this.healthpoints = healthpoints;
@@ -27,7 +27,8 @@ public class Enemy extends GameAsset {
     
     public void update() {
         //Gegner um ein Feld bewegen
-        System.out.println("update");
+        System.out.println("update"+this.getName());
+     //   this.setX(tile[a+1].getx);
     }
 
     public int getDamage() {
