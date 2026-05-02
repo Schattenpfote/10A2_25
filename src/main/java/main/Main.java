@@ -11,10 +11,16 @@ import javax.swing.Timer;
 import java.util.TimerTask;
 import javax.swing.JFrame;
 import gamelogic.Ticks;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.Random;
 import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
+import javax.swing.JPanel;
 
 public class Main {
 
@@ -38,10 +44,6 @@ public class Main {
         f.setVisible(true);
         f.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        JFrame f = new JFrame();
-        f.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        f.setLayout(null);
-        f.setSize(1920, 1080);
 
         // Erzeugt Ebenen
         JLayeredPane lP = new JLayeredPane();
@@ -692,12 +694,11 @@ public class Main {
         lilM[25][23] = new Tiles(25 * a, 23 * a, 2, false);
 
 //Runde 1 starten    
-        waves(wave);
-        
-        Timer repaintT = new Timer(9, (ActionEvent e) -> {
+                waves(wave);        
+   /*     Timer repaintT = new Timer(9, (ActionEvent e) -> {
             c.repaint();
         });
-        repaintT.start();
+        repaintT.start(); */
     }
 
     public static void waves(int wave) {

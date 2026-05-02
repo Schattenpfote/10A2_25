@@ -13,7 +13,7 @@ package main;
 public class Tiles {
     private int x;
     private int y;
-    private int ID;
+    public int ID;
     private boolean isPlaceble;
 
     

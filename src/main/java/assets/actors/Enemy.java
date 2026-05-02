@@ -70,6 +70,7 @@ public static ArrayList<Enemy> Fast = new ArrayList<>();
             this.setY(getY()-1);                
             }            
         }
+            System.out.println("X: "+this.getX()+"Y: "+this.getY());
         //Wenn Gegner auf dem nächsten Tile ist, Id des Feldes, auf dem Gegner ist, aktualisieren 
        if (deltaX == getX() && deltaY == getY()) {
            this.tile = Main.getNextTile(tile).getID();

@@ -17,6 +17,8 @@ public class Tower extends GameAsset {
     static int flowers = 20;
     static int i = 0;
     static int dist = 5;
+    static int mango = 0;
+    static int modef = 0;
     public static ArrayList<Tower> Towers1 = new ArrayList<>();
     
     public Tower(int x, int y, ImageIcon img, String name) {
@@ -84,7 +86,7 @@ public class Tower extends GameAsset {
         for (int j = 0; j < 87; j++) {
             for (int k = 0; k < 10; k++) {
                 for (int l = 0; l < 10; l++) {
-                    if (main.Main.lilM[k][l].id == 89-j) {
+                    if (main.Main.lilM[k][l].ID == 89-j) {
                         a = main.Main.lilM[k][l];
                         if (tileinrange(a,tower)) {
                             int xt = a.getX();
@@ -112,7 +114,7 @@ public class Tower extends GameAsset {
                     }
                 }
             }
-            
+        }     
        // }
         for (Enemy e : b) {
             if (e.getHealthpoints()>c){
@@ -210,5 +212,5 @@ public class Tower extends GameAsset {
     
     
     
-    
+
 }

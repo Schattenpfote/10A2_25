@@ -2,6 +2,7 @@
 package assets.actors;
 import assets.GameAsset;
 import gamelogic.Ticks;
+import static java.lang.Math.abs;
 import static java.lang.Math.sqrt;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
@@ -15,6 +16,8 @@ public class Tower3 extends GameAsset{
     static int flowers = 20;
     static int i = 0;
     static int dist = 5;
+    static int mango = 0;
+    static int modef = 0;
     public static ArrayList<Tower3> Towers3 = new ArrayList<>();
     
     public Tower3(int x, int y, ImageIcon img, String name) {

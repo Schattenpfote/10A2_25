@@ -12,6 +12,8 @@ public class Tower2 extends GameAsset{
     static int flowers = 20;
     static int i = 0;
     static int dist = 5;
+    static int modef = 0;
+    static int mango = 0;    
     public static ArrayList<Tower2> Towers2 = new ArrayList<>();
     
     public Tower2(int x, int y, ImageIcon img, String name) {
@@ -107,7 +109,7 @@ public class Tower2 extends GameAsset{
                     }
             }
     }
-    
+    }
     public void upgrade (Tower2 tower) {
         if (tower.level<=3 & money>tower.upgradeCost & flowers>tower.upgradeCostFlowers) {
             int x = tower.level-1;
