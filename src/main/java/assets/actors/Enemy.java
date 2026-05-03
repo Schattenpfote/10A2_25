@@ -75,7 +75,7 @@ public static ArrayList<Enemy> Fast = new ArrayList<>();
        if (deltaX == getX() && deltaY == getY()) {
            this.tile = Main.getNextTile(tile).getID();
        }
-    }       
+    }      
     }
     }
     public double getDamage() {

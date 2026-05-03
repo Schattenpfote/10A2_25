@@ -34,8 +34,8 @@ public class Main {
 
     public static void main(String[] args) {
 //Vorbereitung Map Erstlleung
-        // TODO code application logic here     
-        //Ticks m = new Ticks();
+        // TODO code application logic here 
+        Ticks m = new Ticks(c);
         JFrame f = new JFrame();
         f.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         f.setLayout(null);
@@ -50,7 +50,7 @@ public class Main {
         lP.setSize(new Dimension(1920, 1080));
         lP.setLayout(null);
 
-        lilC c = new lilC();
+
 
         // 5 -> je kleiner die Zahl, desto weiter im Hintergrund
         lP.add(c, (Object) (5));
@@ -711,14 +711,14 @@ public class Main {
                 }
    for (int i = 0; i < 2; i++) {
                     Enemy.Tank.add(new Enemy(0.8, 0, 80, 5, 0, 490, new ImageIcon(Enemy.class.getResource("/Bilder/Endgegner.png")), "Tank"));
-                }
+                } break;
             case 2:
                 for (int i = 0; i < 4; i++) {
                     Enemy.Standard.add(new Enemy(0.2, 0, 50, 5, 0, 490, new ImageIcon(Enemy.class.getResource("/Bilder/Anfangsgegner.png")), "Standard"));
                 }
                 for (int i = 0; i < 2; i++) {
                     Enemy.Tank.add(new Enemy(0.8, 0, 200, 5, 0, 490, new ImageIcon(Enemy.class.getResource("/Bilder/Endgegner.png")), "Tank"));
-                }
+                } 
    for (int i = 0; i < 2; i++) {
                     Enemy.Fast.add(new Enemy(0.15, 0, 40, 5, 0, 490, new ImageIcon(Enemy.class.getResource("/Bilder/Bomben_Gegner.png")), "Fast"));
                 }

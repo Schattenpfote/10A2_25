@@ -190,7 +190,7 @@ public class lilC extends JPanel {
     @Override
     protected void paintComponent(Graphics g
     ) {
-     
+super.paintComponent(g);     
      
         //Wiesen
         g.drawImage(Wiese, 0 * a, 0 * a, 120, 120, this); 
